@@ -1,0 +1,126 @@
+/* ---------- Estilos Generales ---------- */
+body,
+html {
+  font-family: Arial, sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url("/fronted/img/fondo-biblioteca.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* ---------- Estilos de Header ---------- */
+header {
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+/* ---------- Estilos del Main ---------- */
+main {
+  padding: 20px;
+}
+
+.contenedor {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contenedor h2,
+.contenedor p {
+  color: #333;
+}
+
+/* ---------- Estilos de Formularios ---------- */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="search"] {
+  margin: 5px 0;
+  padding: 10px;
+  width: 80%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+
+/* ---------- Estilos del Footer ---------- */
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px; /* Altura del footer */
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/* ---------- Media Queries para Responsividad ---------- */
+@media screen and (max-width: 768px) {
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+}
+/* ---------- Estilos de la Imagen del Formulario ---------- */
+.login-image {
+  max-width: 100%; /* Esto hace que la imagen sea responsive y no exceda el ancho de su contenedor */
+  height: auto; /* Esto mantiene la relación de aspecto de la imagen */
+  display: block; /* Esto elimina cualquier espacio extra debajo de la imagen */
+  max-height: 150px; /* Ajusta esto a la altura que desees */
+  margin: 0 auto; /* Esto centra la imagen horizontalmente */
+}
+/* ---------- Estilos del Contenedor del Formulario ---------- */
+.login-box {
+  max-width: 400px; /* O el ancho que prefieras */
+  margin: 0 auto; /* Centra el contenedor en la página */
+  padding: 20px; /* O el relleno que prefieras */
+  /* Añade cualquier otro estilo que necesites para el contenedor aquí */
+}
+/* Estilos específicos para el formulario de inicio de sesión */
+.login-container {
+  max-width: 400px; /* Establece el ancho máximo a tu preferencia */
+  margin: 0 auto; /* Centra el contenedor */
+  /* Asegúrate de mantener el resto de los estilos que quieres para este contenedor */
+}

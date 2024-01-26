@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Buscar Libros - Biblioteca en Línea del Politécnico Santiago Mariño
+    </title>
+    <link rel="stylesheet" href="/fronted/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>
+        <a href="index.html"
+          >Biblioteca en Línea del Politécnico Santiago Mariño</a
+        >
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="registro.html">Registrarse</a></li>
+          <li><a href="login.html">Iniciar Sesión</a></li>
+          <li><a href="buscar-li.html">Buscar Libros</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="contenedor">
+        <h2>Buscar en la Colección de Libros</h2>
+        <form
+          class="formulario-busqueda"
+          action="/ruta_para_resultados_de_busqueda"
+          method="get"
+        >
+          <input
+            type="search"
+            name="q"
+            placeholder="Ingrese palabras clave, título, autor..."
+            aria-label="Buscar libros"
+          />
+          <button type="submit">Buscar</button>
+        </form>
+        <div class="resultados-busqueda">
+          <!-- Aquí se mostrarán los resultados de la búsqueda -->
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy; 2024 Biblioteca en Línea del Politécnico Santiago Mariño. Todos
+        los derechos reservados.
+      </p>
+    </footer>
+  </body>
+</html>
